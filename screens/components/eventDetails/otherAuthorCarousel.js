@@ -17,7 +17,7 @@ export const SLIDER_WIDTH = Dimensions.get('window').width;
 export const ITEM_WIDTH = Math.round(SLIDER_WIDTH * 0.8);
 
 const renderItem = ({item, index}) => {
-  return <EventCard item={item} index={index} />;
+  return <EventCard item={item} key={index} />;
 };
 
 const EventCard = ({item, index}) => {

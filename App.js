@@ -6,6 +6,7 @@ import {createStore} from 'redux';
 import rootReducer from './redux/reducers';
 import MainTabs from './screens/components/tapButtons/mainTabs';
 import {MainPage} from './screens/pages/mainPage';
+import './shim';
 
 const store = createStore(rootReducer);
 

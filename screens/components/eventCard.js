@@ -129,7 +129,7 @@ export const EventCard = ({userInfo, item, index, onClickLike, key}) => {
                 height: 70,
               }}>
               {JSON.parse(item.addons).map((addon, i) => (
-                <TouchableOpacity onPress={() => showModal(addon)}>
+                <TouchableOpacity key={i} onPress={() => showModal(addon)}>
                   <Image
                     source={{uri: config.SITE_URL + addon.icon}}
                     style={{
